@@ -47,13 +47,8 @@ def add_pet_to_stock(petshop, newpet):
     })
     get_stock_count(petshop)
 
-# write in a customer and get their cash back
-
 def get_customer_cash(customer):
     return customer["cash"]
-
-# write in customer and cash to remove
-# return new sum
 
 def remove_customer_cash(customer, amount):
     customer["cash"] -= amount
@@ -61,8 +56,7 @@ def remove_customer_cash(customer, amount):
 def get_customer_pet_count(customer):
     pets_list = len(customer["pets"])
     return pets_list
-# pass customer and pet
-# return new pet count
+
 def add_pet_to_customer(customer, pet):
     customer["pets"].append(pet)
 
@@ -71,3 +65,37 @@ def customer_can_afford_pet(customer, pet):
         return True
     else:
         return False
+
+# pass the petshop, the pet, and the customer
+# update the dictionaries to show that a pet has 
+# been sold to a customer
+
+# does the petshop have the pet?
+# if yes, check the customer
+# if no, no sale
+# can the customer afford the pet?
+# if yes, update the customer(cash-, pets+)
+#         update the petshop(cash +, pets -)
+# if no, no sale
+
+# remember the functions already created
+
+
+# def sell_pet_to_customer(petshop, pet, customer):
+#     for item in petshop:
+#         if find_pet_by_name(petshop, pet) == pet:
+#             if customer_can_afford_pet(customer, pet):
+#                 add_pet_to_customer(customer, pet)
+#                 remove_pet_by_name(petshop, pet)
+#                 increase_pets_sold(petshop, 1)
+#                 get_stock_count(petshop)
+#                 get_total_cash(petshop)
+#                 get_customer_cash(customer)
+#                 get_customer_pet_count(customer)
+#                 get_pets_sold(petshop)
+
+
+# get_customer_pet_count
+# get_pets_sold
+# get_customer_cash
+# get_total_cash
