@@ -46,3 +46,8 @@ def add_pet_to_stock(petshop, newpet):
         "price": 10000,
     })
     get_stock_count(petshop)
+
+# write in a customer and get their cash back
+
+def get_customer_cash(customer):
+    return customer["cash"]
