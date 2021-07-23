@@ -34,7 +34,15 @@ def find_pet_by_name(petshop, petname):
         if animal["name"] == petname:
             return animal 
 
-
 def remove_pet_by_name(petshop, petname):
     for_removal = find_pet_by_name(petshop, petname)
     petshop["pets"].remove(for_removal)
+
+def add_pet_to_stock(petshop, newpet):
+    petshop["pets"].append({
+        "name": "Fenya",
+        "pet_type": "cat",
+        "breed": "Tabby",
+        "price": 10000,
+    })
+    get_stock_count(petshop)
