@@ -51,3 +51,10 @@ def add_pet_to_stock(petshop, newpet):
 
 def get_customer_cash(customer):
     return customer["cash"]
+
+# write in customer and cash to remove
+# return new sum
+
+def remove_customer_cash(customer, amount):
+    customer["cash"] -= amount
+
