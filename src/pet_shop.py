@@ -1,4 +1,7 @@
 # WRITE YOUR FUNCTIONS HERE
+from os import remove
+
+
 def get_pet_shop_name(petshop):
     return petshop["name"]
 
@@ -31,5 +34,7 @@ def find_pet_by_name(petshop, petname):
         if animal["name"] == petname:
             return animal 
 
-    
 
+def remove_pet_by_name(petshop, petname):
+    for_removal = find_pet_by_name(petshop, petname)
+    petshop["pets"].remove(for_removal)
