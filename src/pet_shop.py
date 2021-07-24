@@ -70,6 +70,16 @@ def customer_can_afford_pet(customer, pet):
 # update the dictionaries to show that a pet has 
 # been sold to a customer
 
+
+# def sell_pet_to_customer(petshop, pet, customer):
+#     for item in petshop:
+#         if pet == find_pet_by_name(petshop, pet) and customer_can_afford_pet(customer, pet):
+#             get_customer_pet_count(customer)
+#             get_pets_sold(petshop)
+#             get_customer_cash(customer)
+#             get_total_cash(petshop)
+            
+            
 # does the petshop have the pet?
 # if yes, check the customer
 # if no, no sale
@@ -85,17 +95,11 @@ def customer_can_afford_pet(customer, pet):
 #     for item in petshop:
 #         if find_pet_by_name(petshop, pet) == pet:
 #             if customer_can_afford_pet(customer, pet):
-#                 add_pet_to_customer(customer, pet)
-#                 remove_pet_by_name(petshop, pet)
-#                 increase_pets_sold(petshop, 1)
-#                 get_stock_count(petshop)
-#                 get_total_cash(petshop)
-#                 get_customer_cash(customer)
-#                 get_customer_pet_count(customer)
-#                 get_pets_sold(petshop)
-
-
-# get_customer_pet_count
-# get_pets_sold
-# get_customer_cash
-# get_total_cash
+                # add_pet_to_customer(customer, pet)
+                # remove_pet_by_name(petshop, pet)
+                # increase_pets_sold(petshop, 1)
+                # get_stock_count(petshop)
+                # get_total_cash(petshop)
+                # get_customer_cash(customer)
+                # get_customer_pet_count(customer)
+                # get_pets_sold(petshop)
