@@ -75,13 +75,14 @@ def customer_can_afford_pet(customer, pet):
 # been sold to a customer
 
 
-# def sell_pet_to_customer(petshop, pet, customer):
-#     for item in petshop:
-#         if pet == find_pet_by_name(petshop, pet) and customer_can_afford_pet(customer, pet):
-#             get_customer_pet_count(customer)
-#             get_pets_sold(petshop)
-#             get_customer_cash(customer)
-#             get_total_cash(petshop)
+def sell_pet_to_customer(petshop, pet, customer):
+    for item in petshop:
+        if  find_pet_by_name(petshop, pet) == pet and petshop["name"] == customer and customer_can_afford_pet(customer, pet):
+            # now update these functions??
+            get_customer_pet_count(customer) =+ 1 #syntax error cos can't assign anything to a function call
+            get_pets_sold(petshop) =+ 1
+            get_customer_cash(customer) - petshop["pets"]["price"]
+            get_total_cash(petshop) + petshop["pets"]["price"]
             
             
 # does the petshop have the pet?
